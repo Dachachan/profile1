@@ -12,16 +12,17 @@ router.get('/aboutme',(req,res)=>{
 });
 
 router.get('/education',(req,res)=>{
-    res.send("<h1>My Education</h1>");
+    res.render('education',{myData});
 });
 
 router.get('/workepxperience',(req,res)=>{
-    res.send("<h1>My Work Experience</h1>");
+    res.render('Work',{myData});
 });
 
 router.get('/skill',(req,res)=>{
-    res.send("<h1>My Skill</h1>");
+    res.render('Skill',{myData});
 });
+
 
 module.exports = router;
 
